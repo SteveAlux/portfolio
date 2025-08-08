@@ -216,12 +216,12 @@ export default function App() {
                 </a>
               </Button>
               <Button variant="secondary" asChild className="rounded-2xl">
-                <a href="#" target="_blank" rel="noreferrer">
+                <a href={CONTACT.links.linkedin} target="_blank" rel="noreferrer">
                   <Linkedin className="w-4 h-4 mr-2"/> LinkedIn
                 </a>
               </Button>
               <Button variant="secondary" asChild className="rounded-2xl">
-                <a href="#" target="_blank" rel="noreferrer">
+                <a href={CONTACT.links.github} target="_blank" rel="noreferrer">
                   <Github className="w-4 h-4 mr-2"/> GitHub
                 </a>
               </Button>
