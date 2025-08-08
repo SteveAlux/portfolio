@@ -37,9 +37,9 @@ const CONTACT = {
   email: "Steve16velasco@gmail.com",
   phone: "(414) 534-4061",
   links: {
-    github: "#", // add your GitHub URL
-    linkedin: "#", // add your LinkedIn URL
-    resume: "#", // add your hosted PDF resume URL
+    github: "https://github.com/SteveAlux",
+    linkedin: "https://www.linkedin.com/in/steve-velasco-0a03a42a4/", 
+    resume: "#", 
   },
 };
 
