@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { 
   Briefcase, Mail, Phone, MapPin, Github, Linkedin, FileDown,
-  Cpu, Database, CloudSun, Shield, Wrench, Languages, Award, Network, GitBranch
+  Cpu, Database, CloudSun, Shield, Award, GitBranch
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -57,7 +57,7 @@ const SKILLS = [
   {
     group: "Systems, Networking & Tools",
     items: ["Linux", "DHCP/DNS", "System Monitoring", "Troubleshooting", "Git", "IIS"],
-    icon: <Wrench className="w-4 h-4" />,
+    icon: <Briefcase className="w-4 h-4" />,
   },
   {
     group: "Recruiting Tech",
@@ -72,7 +72,7 @@ const SKILLS = [
   {
     group: "Languages",
     items: ["English", "Spanish (Fluent)"],
-    icon: <Languages className="w-4 h-4" />,
+    icon: <Briefcase className="w-4 h-4" />,
   },
 ];
 
@@ -165,8 +165,7 @@ const CERTS = [
   "Real Estate License — Jan 2022 – Apr 2022",
 ];
 
-// ---- Page ----
-export default function Portfolio() {
+export default function App() {
   return (
     <div className="min-h-screen bg-neutral-950 text-neutral-100">
       {/* Top Nav */}
@@ -194,29 +193,35 @@ export default function Portfolio() {
         >
           <div className="md:col-span-3">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight">
-              {CONTACT.name}
+              Steve Velasco
             </h1>
             <p className="mt-3 text-lg text-neutral-300">
-              {CONTACT.title}
+              Talent Acquisition & Technology Support Specialist
             </p>
             <div className="mt-4 flex flex-wrap items-center gap-3 text-neutral-300">
-              <Pill><MapPin className="w-3.5 h-3.5 mr-2"/>{CONTACT.location}</Pill>
-              <Pill><Mail className="w-3.5 h-3.5 mr-2"/>{CONTACT.email}</Pill>
-              <Pill><Phone className="w-3.5 h-3.5 mr-2"/>{CONTACT.phone}</Pill>
+              <span className="inline-flex items-center rounded-full border px-3 py-1 text-xs font-medium bg-neutral-900/60 border-neutral-800 text-neutral-200">
+                <MapPin className="w-3.5 h-3.5 mr-2"/>Milwaukee, WI
+              </span>
+              <span className="inline-flex items-center rounded-full border px-3 py-1 text-xs font-medium bg-neutral-900/60 border-neutral-800 text-neutral-200">
+                <Mail className="w-3.5 h-3.5 mr-2"/>Steve16velasco@gmail.com
+              </span>
+              <span className="inline-flex items-center rounded-full border px-3 py-1 text-xs font-medium bg-neutral-900/60 border-neutral-800 text-neutral-200">
+                <Phone className="w-3.5 h-3.5 mr-2"/>(414) 534-4061
+              </span>
             </div>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button asChild className="rounded-2xl">
-                <a href={CONTACT.links.resume} target="_blank" rel="noreferrer">
+                <a href="#" target="_blank" rel="noreferrer">
                   <FileDown className="w-4 h-4 mr-2"/> Download Resume
                 </a>
               </Button>
               <Button variant="secondary" asChild className="rounded-2xl">
-                <a href={CONTACT.links.linkedin} target="_blank" rel="noreferrer">
+                <a href="#" target="_blank" rel="noreferrer">
                   <Linkedin className="w-4 h-4 mr-2"/> LinkedIn
                 </a>
               </Button>
               <Button variant="secondary" asChild className="rounded-2xl">
-                <a href={CONTACT.links.github} target="_blank" rel="noreferrer">
+                <a href="#" target="_blank" rel="noreferrer">
                   <Github className="w-4 h-4 mr-2"/> GitHub
                 </a>
               </Button>
@@ -226,8 +231,8 @@ export default function Portfolio() {
           <Card className="md:col-span-2 bg-gradient-to-br from-neutral-900 to-neutral-950 border-neutral-800 rounded-2xl">
             <CardContent className="p-6">
               <p className="text-sm leading-relaxed text-neutral-300">
-                Talent professional turned tech builder. I blend **recruiting systems** expertise with
-                **IT support** and **hands-on programming**, creating efficient workflows and data-driven
+                Talent professional turned tech builder. I blend recruiting systems expertise with
+                IT support and hands-on programming, creating efficient workflows and data-driven
                 insights. Open to roles across Talent Ops, IT Support, and entry-level Software/Data.
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
@@ -262,13 +267,8 @@ export default function Portfolio() {
             <CardContent className="p-5 space-y-3">
               <div className="text-sm text-neutral-400">Open to</div>
               <div className="flex flex-wrap gap-2">
-                {[
-                  "Talent Operations / People Tech",
-                  "IT Support / Help Desk",
-                  "Systems / Network Admin (Junior)",
-                  "Data / Analytics (Junior)",
-                ].map((t) => (
-                  <Pill key={t}>{t}</Pill>
+                {["Talent Operations / People Tech","IT Support / Help Desk","Systems / Network Admin (Junior)","Data / Analytics (Junior)"].map((t) => (
+                  <span key={t} className="inline-flex items-center rounded-full border px-3 py-1 text-xs font-medium bg-neutral-900/60 border-neutral-800 text-neutral-200">{t}</span>
                 ))}
               </div>
             </CardContent>
@@ -300,7 +300,7 @@ export default function Portfolio() {
       {/* Experience */}
       <Section id="experience" title="Professional Experience">
         <div className="grid gap-6">
-          {EXPERIENCE.map((job, idx) => (
+          {EXPERIENCE.map((job) => (
             <motion.div
               key={job.role}
               initial={{ opacity: 0, y: 10 }}
@@ -398,10 +398,10 @@ export default function Portfolio() {
                     <a href={`mailto:${CONTACT.email}`}><Mail className="w-4 h-4 mr-2"/> Email</a>
                   </Button>
                   <Button variant="secondary" asChild className="rounded-2xl">
-                    <a href={CONTACT.links.linkedin} target="_blank" rel="noreferrer"><Linkedin className="w-4 h-4 mr-2"/> LinkedIn</a>
+                    <a href="#" target="_blank" rel="noreferrer"><Linkedin className="w-4 h-4 mr-2"/> LinkedIn</a>
                   </Button>
                   <Button variant="secondary" asChild className="rounded-2xl">
-                    <a href={CONTACT.links.github} target="_blank" rel="noreferrer"><Github className="w-4 h-4 mr-2"/> GitHub</a>
+                    <a href="#" target="_blank" rel="noreferrer"><Github className="w-4 h-4 mr-2"/> GitHub</a>
                   </Button>
                 </div>
               </div>
@@ -410,7 +410,7 @@ export default function Portfolio() {
                 <div className="grid grid-cols-2 gap-3 text-sm">
                   <div className="space-y-1">
                     <div className="text-neutral-400">Location</div>
-                    <div>{CONTACT.location}</div>
+                    <div>Milwaukee, WI</div>
                   </div>
                   <div className="space-y-1">
                     <div className="text-neutral-400">Bilingual</div>
@@ -432,7 +432,7 @@ export default function Portfolio() {
       </Section>
 
       <footer className="border-t border-neutral-900 py-8 text-center text-sm text-neutral-500">
-        © {new Date().getFullYear()} {CONTACT.name}. Built with React, Tailwind, and shadcn/ui.
+        © {new Date().getFullYear()} Steve Velasco. Built with React, Tailwind, and shadcn/ui.
       </footer>
     </div>
   );
