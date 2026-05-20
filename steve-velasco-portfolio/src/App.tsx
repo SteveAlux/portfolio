@@ -78,6 +78,19 @@ const SKILLS = [
 
 const EXPERIENCE = [
   {
+  role: "Database Administrator",
+  company: "United Community Center, Milwaukee, WI",
+  dates: "Dec 2025 - Current",
+  bullets: [
+    "Improved quarterly database and reporting workflows, reducing manual resource allocation and increasing operational efficiency.",
+    "Advanced reporting tools to provide faster insight into key organizational metrics for leadership and department teams.",
+    "Corrected device and asset management processes by improving tracking, documentation, and lifecycle visibility.",
+    "Maintained database accuracy through data validation, cleanup, and process standardization.",
+    "Collaborated across departments to identify workflow gaps, troubleshoot system issues, and implement practical technology solutions.",
+    "Created documentation for recurring database, reporting, and asset-management tasks to improve consistency and reduce process delays.",
+  ],
+},
+  {
     role: "Police Officer",
     company: "West Allis & Madison Police Departments, WI",
     dates: "2023 – May 2025",
