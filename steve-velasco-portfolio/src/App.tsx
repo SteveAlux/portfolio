@@ -224,7 +224,7 @@ export default function App() {
             </div>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button asChild className="rounded-2xl">
-                <a href="#" target="_blank" rel="noreferrer">
+                <a href={CONTACT.links.resume} target="_blank" rel="noreferrer">
                   <FileDown className="w-4 h-4 mr-2"/> Download Resume
                 </a>
               </Button>
