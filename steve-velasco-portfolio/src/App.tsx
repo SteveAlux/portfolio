@@ -391,6 +391,12 @@ export default function App() {
             <div className="text-neutral-400">DeVry University, Naperville, IL — Jul 2022 – Jul 2024</div>
           </CardContent>
         </Card>
+         <Card className="bg-neutral-900/60 border-neutral-800 rounded-2xl">
+          <CardContent className="p-5 text-neutral-300 text-sm">
+            <div className="font-medium">Bachelor of Applied Science, Cybersecurity & Networking</div>
+            <div className="text-neutral-400">DeVry University, Naperville, IL — July 2026 – March 2028</div>
+          </CardContent>
+        </Card>
       </Section>
 
       {/* Contact */}
