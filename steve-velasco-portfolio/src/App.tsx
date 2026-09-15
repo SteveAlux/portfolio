@@ -385,7 +385,7 @@ export default function App() {
 
       {/* Education */}
       <Section id="education" title="Education">
-        <Card className="bg-neutral-900/60 border-neutral-800 rounded-2xl">
+        <Card className="bg-neutral-900/60 border-neutral-800 rounded-2xl margin-bottom-10px">
           <CardContent className="p-5 text-neutral-300 text-sm">
             <div className="font-medium">Associate of Applied Science, Information Technology & Networking</div>
             <div className="text-neutral-400">DeVry University, Naperville, IL — Jul 2022 – Jul 2024</div>
