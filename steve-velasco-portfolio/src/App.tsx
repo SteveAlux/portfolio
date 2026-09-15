@@ -39,7 +39,7 @@ const CONTACT = {
   links: {
     github: "https://github.com/SteveAlux",
     linkedin: "https://www.linkedin.com/in/steve-velasco-0a03a42a4/", 
-    resume: "resume.pdf", 
+    resume: "/resume.pdf", 
   },
 };
 
