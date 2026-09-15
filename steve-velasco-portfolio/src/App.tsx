@@ -39,7 +39,7 @@ const CONTACT = {
   links: {
     github: "https://github.com/SteveAlux",
     linkedin: "https://www.linkedin.com/in/steve-velasco-0a03a42a4/", 
-    resume: "#", 
+    resume: "resume.pdf", 
   },
 };
 
@@ -417,10 +417,10 @@ export default function App() {
                     <a href={`mailto:${CONTACT.email}`}><Mail className="w-4 h-4 mr-2"/> Email</a>
                   </Button>
                   <Button variant="secondary" asChild className="rounded-2xl">
-                    <a href="#" target="_blank" rel="noreferrer"><Linkedin className="w-4 h-4 mr-2"/> LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/steve-velasco-0a03a42a4/" target="_blank" rel="noreferrer"><Linkedin className="w-4 h-4 mr-2"/> LinkedIn</a>
                   </Button>
                   <Button variant="secondary" asChild className="rounded-2xl">
-                    <a href="#" target="_blank" rel="noreferrer"><Github className="w-4 h-4 mr-2"/> GitHub</a>
+                    <a href="https://github.com/SteveAlux" target="_blank" rel="noreferrer"><Github className="w-4 h-4 mr-2"/> GitHub</a>
                   </Button>
                 </div>
               </div>
